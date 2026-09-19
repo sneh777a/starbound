@@ -1,4 +1,4 @@
-// ========== Typewriter Effect ==========
+// Typewriter Effect
 const texts = [
   "Full-Stack Developer",
   "Building with AI & Cloud",
@@ -42,8 +42,7 @@ function type() {
 
 type();
 
-
-// ========== Mobile Menu ==========
+// Mobile Menu
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 
