@@ -1,3 +1,27 @@
+/* ========== BACKGROUND VIDEO ========== */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  overflow: hidden;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7; /* adjust this if video is too bright/dark */
+}
+
+/* Keep the stars as fallback */
+.stars, .twinkling {
+  z-index: -2;
+}
+
+
 /* ========== RESET & BASE ========== */
 * {
   margin: 0;
