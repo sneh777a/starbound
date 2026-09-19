@@ -9,9 +9,16 @@
 </head>
 <body>
 
-  <!-- Animated Starry Background -->
-  <div class="stars"></div>
-  <div class="twinkling"></div>
+<!-- Background Video -->
+<div class="video-background">
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="assets/video/starry-night.mp4" type="video/mp4">
+  </video>
+</div>
+
+<!-- Fallback stars (shows if video fails) -->
+<div class="stars"></div>
+<div class="twinkling"></div>
 
   <!-- Navbar -->
   <nav class="navbar">
