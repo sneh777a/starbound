@@ -10,15 +10,12 @@
 <body>
 
 <!-- Background Video -->
-<div class="video-background">
-  <video autoplay muted loop playsinline id="bg-video">
-    <source src="assets/video/starry-night.mp4" type="video/mp4">
-  </video>
-</div>
+<video autoplay muted loop playsinline id="bg-video" class="bg-video">
+  <source src="assets/video/starry-night.mp4" type="video/mp4">
+</video>
 
-<!-- Fallback stars (shows if video fails) -->
-<div class="stars"></div>
-<div class="twinkling"></div>
+<!-- Dark overlay + fallback -->
+<div class="video-overlay"></div>
 
   <!-- Navbar -->
   <nav class="navbar">
