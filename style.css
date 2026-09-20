@@ -329,6 +329,49 @@ body {
 .about-card p:last-child {
   margin-bottom: 0;
 }
+
+/* ========== PROJECTS ========== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+.project-tagline {
+  color: #7dd3fc;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.project-card p {
+  color: #e0f2fe;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.tech-stack {
+  font-size: 0.9rem;
+  color: #bae6fd;
+  margin-bottom: 1.5rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.btn-small {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+}
 /* ========== MOBILE ========== */
 @media (max-width: 768px) {
   .nav-links {
