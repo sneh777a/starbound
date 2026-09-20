@@ -1,3 +1,11 @@
+// Hide loader when page is ready
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  setTimeout(() => {
+    loader.classList.add("hidden");
+  }, 1200); // 1.2 seconds
+});
+
 // Typewriter Effect
 const texts = [
   "Full-Stack Developer",
