@@ -125,30 +125,131 @@
   <section id="skills" style="height: 100vh;"></section>
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
-  <div class="contact-container">
-    <div class="card contact-card">
-      <h2 class="section-title">Contact</h2>
-      
-      <p class="contact-text">
-        I'm currently open to internships and new-grad opportunities.<br>
-        Feel free to reach out — I’d love to connect!
+
+  <!-- Decorative space elements -->
+  <div class="contact-orbit orbit-left"></div>
+  <div class="contact-orbit orbit-right"></div>
+
+  <div class="contact-stars star-1">✦</div>
+  <div class="contact-stars star-2">✧</div>
+  <div class="contact-stars star-3">✦</div>
+  <div class="contact-stars star-4">✧</div>
+
+  <div class="contact-layout">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-intro">
+
+      <div class="contact-mini-star">🌟</div>
+
+      <h2 class="contact-heading">
+        Let's Connect
+      </h2>
+
+      <p class="contact-description">
+        I'm currently open to internships and new-grad opportunities.
       </p>
 
-      <!-- Contact Form -->
-      <form class="contact-form" action="https://formspree.io/f/mljdblay" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+      <p class="contact-description">
+        Have an idea, opportunity, or simply want to say hello?
+        Feel free to reach out.
+      </p>
+
+      <div class="contact-decoration">
+        <span></span>
+        <i>✦</i>
+        <span></span>
+      </div>
+
+      <p class="contact-note">
+        Every message starts a new journey. 🚀
+      </p>
+
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="contact-form-area">
+
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mljdblay"
+        method="POST"
+      >
+
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+          >
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          >
+        </div>
+
+        <div class="input-group textarea-group">
+          <i class="fas fa-comment-dots"></i>
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="contact-send-btn">
+          <i class="fas fa-paper-plane"></i>
+          <span>Send Message</span>
+        </button>
+
       </form>
 
+
+      <!-- SOCIAL ICONS -->
       <div class="contact-social">
-        <a href="https://github.com/sneh777a" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/sneh777a" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:snehaghosh.official@gmail.com"><i class="fas fa-envelope"></i></a>
+
+        <a
+          href="https://github.com/sneh777a"
+          target="_blank"
+          class="social-bubble"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/sneh777a"
+          target="_blank"
+          class="social-bubble"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a
+          href="mailto:snehaghosh.official@gmail.com"
+          class="social-bubble"
+          aria-label="Email"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+
       </div>
+
     </div>
+
   </div>
+
 </section>
 
 <footer class="footer">
