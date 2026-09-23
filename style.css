@@ -940,6 +940,52 @@ body {
   transform: rotate(25deg);
 }
 
+/* ========== CHIBI GIRL ========== */
+.chibi-girl-container {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.chibi-girl {
+  position: absolute;
+  bottom: 0;
+  width: 90px;
+  height: auto;
+  animation: walkAcross 18s linear infinite;
+}
+
+/* Slow walk from left to right */
+@keyframes walkAcross {
+  0% {
+    left: -100px;
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-6px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-6px);
+  }
+  100% {
+    left: 100%;
+    transform: translateY(0);
+  }
+}
+/* Hide on very small screens if needed */
+@media (max-width: 500px) {
+  .chibi-girl {
+    width: 70px;
+  }
+}
 
 /* ---------------------------------------------------------
    FOOTER
@@ -1064,3 +1110,4 @@ body {
   }
 
 }
+
