@@ -288,6 +288,10 @@ body {
 /* ========== SECTIONS ========== */
 .section {
   padding: 100px 8%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .container {
