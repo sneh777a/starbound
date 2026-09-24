@@ -433,41 +433,46 @@ body {
 }
 
 /* ========== PROJECTS ========== */
+.projects-section > .container {
+  max-width: 1400px;
+  width: 100%;
+}
+
 .projects-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
-  padding: 2.5rem;
-  background: rgba(5, 18, 38, 0.82);
-  border: 1px solid rgba(56, 189, 248, 0.38);
-  border-radius: 30px;
+  padding: 3rem;
+  background: rgba(4, 16, 35, 0.88);
+  border: 2px solid rgba(56, 189, 248, 0.42);
+  border-radius: 32px;
   box-shadow:
-    0 0 45px rgba(56, 189, 248, 0.12),
-    inset 0 0 35px rgba(125, 211, 252, 0.035);
-  backdrop-filter: blur(14px);
+    0 0 55px rgba(56, 189, 248, 0.14),
+    inset 0 0 45px rgba(125, 211, 252, 0.035);
+  backdrop-filter: blur(16px);
 }
 
 .projects-container .section-title {
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: 1.8rem;
 }
 
 .projects-container .project-card {
   padding: 1.8rem;
-  background: rgba(10, 24, 48, 0.92);
-  border: 1px solid rgba(56, 189, 248, 0.28);
-  border-radius: 20px;
-  box-shadow: 0 0 22px rgba(56, 189, 248, 0.08);
+  background: rgba(10, 24, 48, 0.96);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 22px;
+  box-shadow: 0 0 24px rgba(56, 189, 248, 0.09);
 }
 
 .projects-container .project-card:hover {
-  border-color: rgba(56, 189, 248, 0.55);
-  box-shadow: 0 0 32px rgba(56, 189, 248, 0.16);
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 0 34px rgba(56, 189, 248, 0.18);
 }
 
 .project-card h3 {
@@ -1189,133 +1194,10 @@ body {
 
 /* ========== PROJECTS RESPONSIVE ========== */
 @media (max-width: 768px) {
-  .projects-container {
-    padding: 1.5rem;
-    border-radius: 22px;
+  .projects-section > .container {
+    max-width: 100%;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
-
-  .projects-container .project-card {
-    padding: 1.4rem;
-  }
-}
-
-/* ========== MOBILE MENU ========== */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    font-size: 1.6rem;
-    cursor: pointer;
-    color: #e0f2fe;
-  }
-
-  .nav-links {
-    position: fixed;
-    top: 70px;
-    right: -100%;
-    width: 70%;
-    height: calc(100vh - 70px);
-    background: rgba(3, 10, 22, 0.97);
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 3rem;
-    gap: 2rem;
-    transition: right 0.3s ease;
-    border-left: 1px solid rgba(56, 189, 248, 0.15);
-  }
-
-  .nav-links.active {
-    right: 0;
-  }
-
-  .nav-links a {
-    font-size: 1.2rem;
-  }
-}
-/* =========================================================
-   CONTACT MOBILE
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-  .contact-section {
-    padding: 110px 6% 70px;
-  }
-
-  .contact-layout {
-    grid-template-columns: 1fr;
-
-    gap: 45px;
-
-    max-width: 650px;
-  }
-
-  .contact-intro {
-    text-align: center;
-  }
-
-  .contact-description {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .contact-decoration {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .contact-heading {
-    font-size: 3.5rem;
-  }
-
-}
-
-
-@media (max-width: 500px) {
-
-  .contact-section {
-    padding: 100px 5% 60px;
-  }
-
-  .contact-heading {
-    font-size: 2.8rem;
-  }
-
-  .contact-description {
-    font-size: 1rem;
-  }
-
-  .input-group {
-    border-radius: 16px;
-
-    padding: 0 15px;
-  }
-
-  .social-bubble {
-    width: 52px;
-    height: 52px;
-
-    font-size: 1.15rem;
-  }
-
-  .contact-stars {
-    opacity: 0.4;
-  }
-
-  .contact-orbit {
-    opacity: 0.5;
-  }
-
-}
-
-
-/* ========== PROJECTS RESPONSIVE ========== */
-@media (max-width: 768px) {
   .projects-container {
     padding: 1.5rem;
     border-radius: 22px;
