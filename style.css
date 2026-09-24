@@ -229,7 +229,21 @@ body {
 
 /* The photo is hidden until a real profile image is available. */
 .profile-img {
-  display: none;
+  display: block;
+  width: 165px;
+  height: 235px;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  filter:
+    drop-shadow(0 0 12px rgba(167, 139, 250, 0.45))
+    drop-shadow(0 0 28px rgba(56, 189, 248, 0.18));
+  animation: profileFloat 4s ease-in-out infinite;
+}
+
+@keyframes profileFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
 .profile-orbit {
