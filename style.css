@@ -201,7 +201,7 @@ body {
   max-width: 1400px;
   min-height: 620px;
   display: grid;
-  grid-template-columns: minmax(260px, 0.8fr) minmax(180px, 0.7fr) minmax(420px, 1.5fr);
+  grid-template-columns: minmax(420px, 1.5fr) minmax(180px, 0.7fr) minmax(260px, 0.8fr);
   align-items: center;
   gap: 2rem;
 }
@@ -211,7 +211,7 @@ body {
   position: relative;
   width: 280px;
   height: 280px;
-  justify-self: start;
+  justify-self: end;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -341,7 +341,7 @@ body {
 .hero-info {
   text-align: left;
   max-width: 650px;
-  justify-self: end;
+  justify-self: start;
 }
 
 .hero-kicker {
