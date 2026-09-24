@@ -50,9 +50,16 @@ function type() {
 
 type();
 
-// Mobile Menu
+// Navigation: mobile menu + glowing active section
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
+const navItems = document.querySelectorAll(".nav-links a");
+
+function setActiveNav(id) {
+  navItems.forEach(link => {
+    link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+  });
+}
 
 if (hamburger && navLinks) {
   hamburger.addEventListener("click", () => {
@@ -60,9 +67,37 @@ if (hamburger && navLinks) {
   });
 
   // Close menu when a link is clicked
-  document.querySelectorAll(".nav-links a").forEach(link => {
+  navItems.forEach(link => {
     link.addEventListener("click", () => {
       navLinks.classList.remove("active");
+      setActiveNav(link.getAttribute("href").replace("#", ""));
     });
   });
+}
+
+// Keep the navbar glowing for the section currently on screen.
+const sections = document.querySelectorAll("header[id], section[id]");
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    const visible = entries
+      .filter(entry => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+    if (visible) {
+      setActiveNav(visible.target.id);
+    }
+  },
+  {
+    root: null,
+    threshold: [0.25, 0.5, 0.75],
+    rootMargin: "-20% 0px -55% 0px"
+  }
+);
+
+sections.forEach(section => sectionObserver.observe(section));
+
+// Home is active when the page is at the very top.
+if (window.scrollY < 120) {
+  setActiveNav("home");
 }
