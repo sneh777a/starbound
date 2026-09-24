@@ -399,8 +399,9 @@ body {
 .section-title {
   text-align: center;
   font-size: 2.2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   color: #7dd3fc;
+  text-shadow: 0 0 18px rgba(56, 189, 248, 0.35);
 }
 
 /* Glowing Card */
