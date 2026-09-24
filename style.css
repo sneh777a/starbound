@@ -1192,6 +1192,24 @@ body {
   .hero-info { order: 3; }
 }
 
+
+/* ========== PROJECTS RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 1.5rem;
+    border-radius: 22px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .projects-container .project-card {
+    padding: 1.4rem;
+  }
+}
+
 /* ========== MOBILE MENU ========== */
 @media (max-width: 768px) {
   .hamburger {
