@@ -94,47 +94,60 @@
 <!-- Projects Section -->
 <section id="projects" class="section projects-section">
   <div class="container">
-    <div class="projects-container">
-      <h2 class="section-title">Projects</h2>
+    <h2 class="section-title">Projects</h2>
 
-      <div class="projects-grid">
+    <div class="projects-slider-wrapper">
+      <!-- Left Arrow -->
+      <button class="slider-btn prev-btn" aria-label="Previous">
+        <i class="fas fa-chevron-left"></i>
+      </button>
 
-      <!-- Project 1: Quizzo AI -->
-      <div class="card project-card">
-        <h3>Quizzo AI</h3>
-        <p class="project-tagline">Real-time multiplayer quiz platform powered by Gemini AI</p>
-        <p>
-          Users can generate quizzes from any topic using AI, join live rooms, and compete in real time. 
-          Includes authentication, scheduled quizzes, waiting rooms, and performance dashboards.
-        </p>
-        <p class="tech-stack"><strong>Tech:</strong> React, Node.js, Express, MongoDB, Socket.io, Gemini AI, JWT, Tailwind</p>
-        <div class="project-links">
-          <a href="https://github.com/sneh777a/QuizzoAiApp" target="_blank" class="btn btn-small">GitHub</a>
-          <a href="https://quizzo-ai-app-ivory.vercel.app" target="_blank" class="btn btn-small btn-outline">Live Demo</a>
+      <!-- Slider Track -->
+      <div class="projects-slider">
+        <div class="projects-track">
+
+          <!-- Project 1: Quizzo AI -->
+          <div class="card project-card">
+            <h3>Quizzo AI</h3>
+            <p class="project-tagline">Real-time multiplayer quiz platform powered by Gemini AI</p>
+            <p>
+              Users can generate quizzes from any topic using AI, join live rooms, and compete in real time. 
+              Includes authentication, scheduled quizzes, waiting rooms, and performance dashboards.
+            </p>
+            <p class="tech-stack"><strong>Tech:</strong> React, Node.js, Express, MongoDB, Socket.io, Gemini AI, JWT, Tailwind</p>
+            <div class="project-links">
+              <a href="https://github.com/sneh777a/QuizzoAiApp" target="_blank" class="btn btn-small">GitHub</a>
+              <a href="https://quizzo-ai-app-ivory.vercel.app" target="_blank" class="btn btn-small btn-outline">Live Demo</a>
+            </div>
+          </div>
+
+          <!-- Project 2: Ecliptica -->
+          <div class="card project-card">
+            <h3>Ecliptica</h3>
+            <p class="project-tagline">Personal productivity OS – track health, finance & goals</p>
+            <p>
+              A full-stack productivity application that helps users manage health metrics, finances, and personal goals 
+              in one place. Built with a clean interface and modular architecture.
+            </p>
+            <p class="tech-stack"><strong>Tech:</strong> JavaScript, React, Node.js, Express, MongoDB</p>
+            <div class="project-links">
+              <a href="https://github.com/sneh777a/ecliptica" target="_blank" class="btn btn-small">GitHub</a>
+              <a href="https://ecliptica-eight.vercel.app" target="_blank" class="btn btn-small btn-outline">Live Demo</a>
+            </div>
+          </div>
+
+          <!-- You can add more project cards here later -->
+
         </div>
       </div>
 
-      <!-- Project 2: Ecliptica -->
-      <div class="card project-card">
-        <h3>Ecliptica</h3>
-        <p class="project-tagline">Personal productivity OS – track health, finance & goals</p>
-        <p>
-          A full-stack productivity application that helps users manage health metrics, finances, and personal goals 
-          in one place. Built with a clean interface and modular architecture.
-        </p>
-        <p class="tech-stack"><strong>Tech:</strong> JavaScript, React, Node.js, Express, MongoDB</p>
-        <div class="project-links">
-          <a href="https://github.com/sneh777a/ecliptica" target="_blank" class="btn btn-small">GitHub</a>
-          <a href="https://ecliptica-eight.vercel.app" target="_blank" class="btn btn-small btn-outline">Live Demo</a>
-        </div>
-      </div>
-
-
-      </div>
+      <!-- Right Arrow -->
+      <button class="slider-btn next-btn" aria-label="Next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
     </div>
   </div>
 </section>
-  <section id="skills" style="height: 100vh;"></section>
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
 
