@@ -101,3 +101,33 @@ sections.forEach(section => sectionObserver.observe(section));
 if (window.scrollY < 120) {
   setActiveNav("home");
 }
+
+// Projects Slider
+const track = document.querySelector(".projects-track");
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
+const cards = document.querySelectorAll(".project-card");
+
+let currentIndex = 0;
+
+function updateSlider() {
+  if (!track || cards.length === 0) return;
+  const cardWidth = cards[0].offsetWidth + 24; // card + gap
+  track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+}
+
+if (nextBtn && prevBtn) {
+  nextBtn.addEventListener("click", () => {
+    if (currentIndex < cards.length - 1) {
+      currentIndex++;
+      updateSlider();
+    }
+  });
+
+  prevBtn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
+    }
+  });
+}
