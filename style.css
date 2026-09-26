@@ -407,6 +407,32 @@ body {
   margin-bottom: 0;
 }
 
+/* ========== JOURNEY ========== */
+.journey-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.journey-year {
+  color: #38bdf8;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.journey-card h3 {
+  color: #7dd3fc;
+  margin-bottom: 0.6rem;
+}
+
+.journey-card p {
+  color: #e0f2fe;
+  line-height: 1.7;
+}
 /* =========================================================
    8. PROJECTS SLIDER
    ========================================================= */
@@ -535,7 +561,71 @@ body {
     font-size: 0.95rem;
   }
 }
+/* ========== SKILLS ========== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
 
+.skill-card h3 {
+  color: #38bdf8;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.skill-tags span {
+  padding: 0.4rem 0.9rem;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  color: #e0f2fe;
+  transition: all 0.3s ease;
+}
+
+.skill-tags span:hover {
+  background: rgba(56, 189, 248, 0.25);
+  border-color: #38bdf8;
+  transform: scale(1.08);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+
+/* ========== ACHIEVEMENTS ========== */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.achievement-card {
+  text-align: center;
+}
+
+.achievement-icon {
+  font-size: 2rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+}
+
+.achievement-card h3 {
+  color: #7dd3fc;
+  margin-bottom: 0.7rem;
+}
+
+.achievement-card p {
+  color: #e0f2fe;
+  line-height: 1.6;
+}
 /* =========================================================
    9. CONTACT
    ========================================================= */
