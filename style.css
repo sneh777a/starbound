@@ -458,21 +458,23 @@ body {
 .projects-slider {
   overflow: hidden;
   width: 100%;
+  flex: 1;
 }
 
 .projects-track {
   display: flex;
   gap: 1.5rem;
   transition: transform 0.4s ease;
+  width: 100%;
 }
 
 .project-card {
-  min-width: 320px;
-  max-width: 360px;
-  height: 100%;
+  flex: 1 1 0;
+  min-width: 280px;
+  max-width: none;
+  height: auto;
   display: flex;
   flex-direction: column;
-  flex-shrink: 0;
   padding: 1.8rem;
   background: rgba(10, 24, 48, 0.96);
   border: 1px solid rgba(56, 189, 248, 0.3);
@@ -552,6 +554,7 @@ body {
   .project-card {
     min-width: 260px;
     max-width: 300px;
+    flex: 0 0 auto;
     padding: 1.4rem;
   }
 
@@ -984,15 +987,6 @@ body {
   .hero-profile {
     justify-self: center;
     margin-bottom: 1.5rem;
-  }
-
-  .project-card {
-    min-width: 280px;
-  }
-
-  .slider-btn {
-    width: 40px;
-    height: 40px;
   }
 }
 
