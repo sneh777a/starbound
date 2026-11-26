@@ -689,3 +689,179 @@ body {
   .chibi-girl { width: 70px; }
   .social-bubble { width: 52px; height: 52px; font-size: 1.15rem; }
 }
+
+
+/* =========================================================
+   STAR BOUND — SOFT COSMIC GLOW POLISH
+   Design-only layer: keeps the existing layout, content,
+   colours, assets and interactions intact.
+   ========================================================= */
+
+:root {
+  --star-cyan: #67e8f9;
+  --star-blue: #38bdf8;
+  --star-violet: #a78bfa;
+  --star-glow: rgba(56, 189, 248, 0.28);
+}
+
+/* A little more depth behind the existing background video. */
+body {
+  background-color: #030a16;
+}
+
+.video-overlay {
+  background:
+    radial-gradient(ellipse at 18% 18%, rgba(59, 130, 246, 0.13), transparent 42%),
+    radial-gradient(ellipse at 82% 72%, rgba(139, 92, 246, 0.12), transparent 40%),
+    rgba(3, 10, 22, 0.38);
+}
+
+/* Soft luminous navigation, without changing its dimensions. */
+.navbar {
+  background: linear-gradient(90deg, rgba(3, 10, 22, 0.94), rgba(12, 20, 43, 0.88), rgba(3, 10, 22, 0.94));
+  border-bottom-color: rgba(125, 211, 252, 0.2);
+  box-shadow: 0 8px 30px rgba(2, 8, 23, 0.25), 0 1px 18px rgba(56, 189, 248, 0.06);
+}
+
+.logo {
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.55), 0 0 25px rgba(56, 189, 248, 0.2);
+}
+
+/* Gentle glow on the hero text and portrait. */
+.hero h1 {
+  text-shadow: 0 0 28px rgba(56, 189, 248, 0.12);
+}
+
+.highlight {
+  color: var(--star-cyan);
+  text-shadow: 0 0 10px rgba(103, 232, 249, 0.65), 0 0 30px rgba(56, 189, 248, 0.35);
+}
+
+.hero-kicker,
+.hero h2 {
+  text-shadow: 0 0 12px rgba(125, 211, 252, 0.42);
+}
+
+.profile-img {
+  filter:
+    drop-shadow(0 0 10px rgba(167, 139, 250, 0.55))
+    drop-shadow(0 0 24px rgba(56, 189, 248, 0.32))
+    drop-shadow(0 0 42px rgba(56, 189, 248, 0.16));
+}
+
+.profile-orbit {
+  border-color: rgba(125, 211, 252, 0.32);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.08);
+}
+
+/* Buttons get a richer, soft neon edge on hover. */
+.btn {
+  box-shadow: 0 0 14px rgba(14, 165, 233, 0.35), inset 0 0 12px rgba(255, 255, 255, 0.08);
+}
+
+.btn:hover,
+.contact-send-btn:hover {
+  filter: brightness(1.08);
+}
+
+/* Section headings glow softly rather than looking flat. */
+.section-title {
+  color: #a5e8ff;
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.45), 0 0 24px rgba(56, 189, 248, 0.22);
+}
+
+/* Glass panels: luminous edges, subtle inner light. */
+.card,
+.journey-container,
+.projects-slider-wrapper {
+  background-color: rgba(7, 17, 38, 0.78);
+  border-color: rgba(125, 211, 252, 0.28);
+  box-shadow:
+    0 0 22px rgba(56, 189, 248, 0.08),
+    0 14px 45px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.055);
+}
+
+.card:hover,
+.project-card:hover {
+  border-color: rgba(103, 232, 249, 0.68);
+  box-shadow:
+    0 0 12px rgba(56, 189, 248, 0.2),
+    0 0 32px rgba(56, 189, 248, 0.13),
+    0 18px 38px rgba(0, 0, 0, 0.2);
+}
+
+.project-card {
+  background: linear-gradient(145deg, rgba(12, 29, 57, 0.96), rgba(8, 18, 39, 0.96));
+  border-color: rgba(125, 211, 252, 0.25);
+}
+
+.project-card h3,
+.skill-card h3,
+.achievement-card h3,
+.journey-card h3 {
+  text-shadow: 0 0 13px rgba(56, 189, 248, 0.24);
+}
+
+/* Skill chips and achievement icons get a restrained star-like shimmer. */
+.skill-tags span {
+  box-shadow: inset 0 0 12px rgba(56, 189, 248, 0.035);
+}
+
+.skill-tags span:hover {
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.22), 0 0 22px rgba(56, 189, 248, 0.12);
+}
+
+.achievement-icon {
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.35));
+}
+
+/* Contact area: a slightly dreamier nebula-like atmosphere. */
+.contact-section {
+  background:
+    radial-gradient(ellipse at 12% 35%, rgba(56, 189, 248, 0.075), transparent 38%),
+    radial-gradient(ellipse at 88% 68%, rgba(139, 92, 246, 0.075), transparent 40%);
+}
+
+.contact-heading {
+  color: #a5e8ff;
+  text-shadow:
+    0 0 10px rgba(56, 189, 248, 0.65),
+    0 0 28px rgba(56, 189, 248, 0.32),
+    0 0 55px rgba(139, 92, 246, 0.16);
+}
+
+.input-group {
+  box-shadow:
+    inset 0 0 18px rgba(56, 189, 248, 0.045),
+    0 0 18px rgba(56, 189, 248, 0.055);
+}
+
+.social-bubble {
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.28), inset 0 0 14px rgba(125, 211, 252, 0.06);
+}
+
+.footer {
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.2);
+}
+
+/* Keep motion comfortable for visitors who request reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  .nav-links a.active::after,
+  .profile-img,
+  .orbit-one,
+  .orbit-two,
+  .contact-mini-star,
+  .contact-stars,
+  .chibi-girl {
+    animation: none !important;
+  }
+
+  .card,
+  .project-card,
+  .btn,
+  .social-links a,
+  .social-bubble {
+    transition: none !important;
+  }
+}
