@@ -1145,10 +1145,3 @@ h1, h2, h3, .logo, .section-title, .contact-heading {
     transition-duration: .01ms !important;
   }
 }
-
-
-/* Removed the decorative walking chibi from the contact section. */
-.chibi-girl-container,
-.chibi-girl {
-  display: none !important;
-}
